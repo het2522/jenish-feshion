@@ -285,32 +285,4 @@ nav .social-links a:hover {
   bottom: 50px;
   z-index: 100;
 }
-.header-top {
-  text-align: center; /* Center align the text */
-  text-decoration: none; /* Remove any text decoration */
-}
-
-.container {
-  width: 80%; /* Adjust as needed */
-  margin: 0 auto; /* Center the container */
-}
-
-.top-message p {
-  margin: 0; /* Remove any default margin */
-}
-
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  .header-top {
-    /* Adjust styles for smaller screens */
-    font-size: 14px; /* For example, reduce font size */
-  }
-}
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  /* Adjust carousel slide width for smaller screens */
-  .carousel-item img {
-    width: 100%; /* Make images fill the width of the carousel */
-    height: auto; /* Maintain aspect ratio */
-  }
-}
+https://jancy.netlify.app/
