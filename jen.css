@@ -204,7 +204,7 @@ footer {
 }
 
 footer {
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
   width: 100%;
   background-color: #f0f0f0;
@@ -223,54 +223,94 @@ element.style {
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
 
 
-.navbar {
-  overflow: hidden;
-  background-color: red; /* Change this to your desired background color */
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure it's above other elements */
-}
 
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: #ddd; /* Change this to your desired hover color */
-  color: black;
-}
-
-.logo {
-  display: inline-block;
-}
-
-.nav-links {
-  float: right;
+* {
   margin: 0;
   padding: 0;
-  list-style: none;
+  box-sizing: border-box;
+}
+/* Style nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rosybrown;
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
 }
 
-.nav-links li {
-  display: inline-block;
-}
-
-.nav-links li a {
-  display: block;
-  padding: 14px 20px;
+nav a {
+  color: #fff;
   text-decoration: none;
-  color: white;
+  padding: 0.5rem 1rem;
 }
 
-.nav-links li a:hover {
-  background-color: #ddd;
-  color: black;
+nav a:hover {
+  background-color: #555;
 }
 
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+nav li {
+  margin: 0 1rem;
+}
+
+nav .social-links {
+  display: flex;
+  align-items: center;
+}
+
+nav .social-links a {
+  margin-left: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav .social-links a:hover {
+  color: #ccc;
+}
+.whatsapp-sec {
+  right: 30px;
+  bottom: 50px;
+  z-index: 100;
+}
+.header-top {
+  text-align: center; /* Center align the text */
+  text-decoration: none; /* Remove any text decoration */
+}
+
+.container {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.top-message p {
+  margin: 0; /* Remove any default margin */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header-top {
+    /* Adjust styles for smaller screens */
+    font-size: 14px; /* For example, reduce font size */
+  }
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Adjust carousel slide width for smaller screens */
+  .carousel-item img {
+    width: 100%; /* Make images fill the width of the carousel */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
